@@ -61,8 +61,8 @@ body {
 .circle {
   background-color: rgb(114, 139, 89);
   border-radius: 50%;
-  width: 3em;
-  height: 3em;
+  width: 50px;
+  height: 50px;
   color: #eef5d4;
   display: flex;
   justify-content: center;
@@ -130,4 +130,40 @@ body {
   text-align: center;
   background-color: #ffffff00;
   border-style: none;
+}
+
+#blita {
+  margin-bottom: 5px;
+}
+
+.table>:not(caption)>*>* {
+  padding: 2px;
+  padding-top: 10px;
+}
+
+@media (min-width:520px){
+  .decorativa{
+    display: none;
+  }
+}
+
+@media (orientation: landscape) {
+  #logo {
+    width: 40%;
+  }
+
+  .backAdj {
+    margin: 2em;
+    background-color: #eef5d4;
+    border-radius: 10px;
+    padding: 1em;
+    width: 100%;
+    height: 90%;
+    overflow: scroll;
+  }
+
+  .decorativa {
+    display: none;
+  }
+
 }
