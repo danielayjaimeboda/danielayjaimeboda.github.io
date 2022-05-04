@@ -13,7 +13,7 @@
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/89f32dc1fd.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/estilos.css" />
-  <link rel="stylesheet" href="css/mediaquery.css" media="(min-width: 550px)">
+  <link rel="stylesheet" href="css/mediaquery.css" media="(min-width: 740px)">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/script.js"></script>
   <link rel="shortcut icon" href="img/valentine-day28_114899.ico" type="image/x-icon" />
@@ -98,15 +98,18 @@
           </div>
         </div>
 
-        <!--Mapa-->
-        <iframe class="mt-3"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.3411520976947!2d-87.33295698467452!3d20.368819115353798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e33a566e06ee1%3A0xba1a2dd58847d020!2sBahia%20Principe%20Grand%20Tulum!5e0!3m2!1ses-419!2smx!4v1651102073361!5m2!1ses-419!2smx"
-          width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <div class="mx-auto">
+          <!--Mapa-->
+          <iframe class="mt-3"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.3411520976947!2d-87.33295698467452!3d20.368819115353798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e33a566e06ee1%3A0xba1a2dd58847d020!2sBahia%20Principe%20Grand%20Tulum!5e0!3m2!1ses-419!2smx!4v1651102073361!5m2!1ses-419!2smx"
+            width="220" height="220" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
         <button class="abajito mt-2" type="button" onclick="Siguiente('ubicacion');">
           <i class="fa-solid fa-arrow-down"></i>
         </button>
+
       </div>
     </div>
 
@@ -117,21 +120,53 @@
         <h1 class="tFont dorado mt-2 mb-0">Dia de la boda</h1>
         <img src="img/divisor.png" alt="divisor" width="100%">
         <h5 class="cFont mt-3">Sabado 11 de Junio de 2022</h5>
-        <img src="img/calendar.png" alt="Calendario" width="100%">
-        <p class="cFont mt-2">Solo faltan:</p>
-        <div class="row d-flex justify-content-evenly">
-          <div class="circle dias" id="dias"></div>
-          <div class="circle horas" id="horas"></div>
-          <div class="circle minutos" id="minutos"></div>
-          <div class="circle segundos" id="segundos"></div>
+        <img src="img/calendar.png" alt="Calendario" width="100%" id="lovecalendar">
+        <p class="cFont mt-2 mb-0">Solo faltan:</p>
+
+        <div class="mx-auto peque">
+          <table class="cFont table table-borderless " id="blita">
+            <tbody>
+              <tr>
+                <td style="width: 25%;">
+                  <div class="circle text-white mx-auto d-flex justify-content-center align-items-center">
+                    <span class="tFont dias"></span>
+                  </div>
+                </td>
+                <td style="width: 25%;">
+                  <div class="circle text-white mx-auto d-flex justify-content-center align-items-center">
+                    <span class="tFont horas"></span>
+                  </div>
+                </td>
+                <td style="width: 25%;">
+                  <div class="circle text-white mx-auto d-flex justify-content-center align-items-center">
+                    <span class="tFont minutos"></span>
+                  </div>
+                </td>
+                <td style="width: 25%;">
+                  <div class="circle text-white mx-auto d-flex justify-content-center align-items-center">
+                    <span class="tFont segundos"></span>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  Días
+                </td>
+                <td>
+                  Horas
+                </td>
+                <td>
+                  Minutos
+                </td>
+                <td>
+                  Segundos
+                </td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-        <div class="row peque mt-1">
-          <div class="col-3">Dias</div>
-          <div class="col-3">Horas</div>
-          <div class="col-3">Minutos</div>
-          <div class="col-3">Segundos</div>
-        </div>
-        <button class="abajito mt-3" type="button" onclick="Siguiente('fecha');">
+
+        <button class="abajito" type="button" onclick="Siguiente('fecha');">
           <i class="fa-solid fa-arrow-down"></i>
         </button>
       </div>
@@ -259,25 +294,27 @@
   <div class="container" id="principal">
 
     <div class="d-flex justify-content-center align-items-end" style="height: 100vh;" id="la">
-      <table class="table align-middle tFont text-white fs-4 table-borderless text-center" id="tab">
-        <tbody>
-          <tr>
-            <td id="ubi" class="hid"><a href="#ubiubi">Ubicación</a></td>
-            <td rowspan="3">
-              <img src="img/dyjl.png" width="55%" id="logsito">
-            </td>
-            <td id="fec" class="hid"><a href="#fecfec">Fecha</a></td>
-          </tr>
-          <tr>
-            <td id="mesar" class="hid"><a href="#mesmes">Mesa de regalos</a></td>
-            <td id="cod" class="hid"><a href="#codcod">Código de vestimenta</a></td>
-          </tr>
-          <tr>
-            <td id="gal" class="hid"><a href="#galgal">Galería</a></td>
-            <td>‎</td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="sombra">
+        <table class="table align-middle tFont text-white fs-4 table-borderless text-center" id="tab">
+          <tbody>
+            <tr>
+              <td id="ubi" class="hid"><a href="#ubiubi">Ubicación</a></td>
+              <td rowspan="3">
+                <img src="img/dyjl.png" width="55%" id="logsito">
+              </td>
+              <td id="fec" class="hid"><a href="#fecfec">Fecha</a></td>
+            </tr>
+            <tr>
+              <td id="mesar" class="hid"><a href="#mesmes">Mesa de regalos</a></td>
+              <td id="cod" class="hid"><a href="#codcod">Código de vestimenta</a></td>
+            </tr>
+            <tr>
+              <td id="gal" class="hid"><a href="#galgal">Galería</a></td>
+              <td>‎</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
 
     <div class="text-center">
@@ -287,7 +324,7 @@
     <div class="contenedorcito escondido mt-5 text-center" id="ubiubi">
       <i class="fa-solid fa-location-dot fa-3x"></i>
       <h1 class="tFont verde mt-3">Ubicación</h1>
-      <div class="row mt-3">
+      <div class="row mt-3" id="fila">
         <div class="col-5">
           <h3 class="tFont dorado">
             <i class="fa-solid fa-cross"></i>
@@ -314,7 +351,8 @@
             17:00 Cena en Huppa
           </p>
 
-          <a class="mapa cFont" href="https://goo.gl/maps/L3vCUiUZEFpiMnGU6"><i class="fa-solid fa-map"></i> Google maps</a>
+          <a class="mapa cFont" href="https://goo.gl/maps/L3vCUiUZEFpiMnGU6"><i class="fa-solid fa-map"></i> Google
+            maps</a>
 
         </div>
         <div class="col-7">
@@ -369,6 +407,44 @@
           </div>
         </div>
       </div>
+
+      <div class="excondido mt-4">
+        <h3 class="tFont dorado">
+          <i class="fa-solid fa-cross"></i>
+          Ceremonia religiosa
+        </h3>
+        <p class="cFont">Capilla nuestra señora de Guadalupe
+          <br>
+          14:00 a 15:00
+          <br>
+          Ubicación dentro del hotel
+        </p>
+
+        <hr class="mt-5 mx-auto" width="70%">
+
+        <h3 class="tFont dorado mt-5">
+          <i class="fa-solid fa-champagne-glasses"></i>
+          Recepción y hospedaje
+        </h3>
+        <p class="cFont">
+          Hotel Bahía principe grand tulum
+          <br>
+          16:00 Cóctel en Piscina principal
+          <br>
+          17:00 Cena en Huppa
+        </p>
+
+        <div class="mx-auto">
+          <!--Mapa-->
+          <iframe class="mt-3"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.3411520976947!2d-87.33295698467452!3d20.368819115353798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4e33a566e06ee1%3A0xba1a2dd58847d020!2sBahia%20Principe%20Grand%20Tulum!5e0!3m2!1ses-419!2smx!4v1651102073361!5m2!1ses-419!2smx"
+            width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+
+      </div>
     </div>
 
     <div class="text-center mt-5">
@@ -379,13 +455,13 @@
       <i class="fa-solid fa-calendar-days fa-3x"></i>
       <h1 class="tFont verde mt-3">Dia de la boda</h1>
       <h3 class="cFont">Sábado 11 de Junio 2022</h3>
-      <img src="img/calendar.png" alt="Calendario" width="50%">
+      <img src="img/calendar.png" alt="Calendario" width="50%" id="calendariodeamor">
       <p class="cFont">
         <br>
         Faltan solo:
       </p>
-      <div style="width: 70%;" class="mx-auto">
-        <table class="cFont table table-borderless">
+      <div style="width: 70%;" class="mx-auto" id="divtamano70">
+        <table class="cFont table table-borderless" id="tablacount">
           <tbody>
             <tr>
               <td style="width: 25%;">
