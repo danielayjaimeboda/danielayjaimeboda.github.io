@@ -1,0 +1,112 @@
+.decorativa {
+    display: none;
+}
+
+.contenedorcenter{
+    display: none;
+}
+
+.escondido {
+    display: block;
+}
+
+.contenedorcito {
+    background-image: url("../img/tex.jpg");
+    border-radius: 5px;
+    padding: 80px;
+}
+
+body {
+    background-image: url(../img/pDYJ.jpg);
+    background-size: 100%;
+    background-position: top center;
+    background-attachment: fixed;
+}
+
+#principal {
+    height: 100vh;
+    display: block ;
+}
+
+#logsito {
+    padding: 10px;
+}
+
+#ubi:hover, #fec:hover, #mesar:hover, #cod:hover, #gal:hover {
+    text-shadow: -3px 2px 5px #D4D4D4;
+    cursor: pointer;
+}
+
+#tab {
+    display: none;
+}
+
+.disnone {
+    display: none;
+}
+
+#la {
+    display: none;
+}
+
+::-webkit-scrollbar {display: none;}
+
+.verde {
+    color: rgb(143, 168, 97);
+}
+
+.circulo {
+    background-color: rgb(123, 143, 92);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+#nEvento {
+    cursor: pointer;
+    text-decoration: underline;
+    width: 6em;
+    text-align: center;
+    background-color: #ffffff00;
+    border-style: none;
+}
+
+
+.lpool:hover {
+    color: #e228c9;
+    border-color: #e228c9;
+    background-color: #d4d4d400;
+}
+
+.lpool {
+    padding: 10px;
+}
+
+#github {
+    text-decoration: none;
+    color: #838383;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(123, 143, 92);
+}
+
+.mapa {
+    background-color: #868a68;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: large;
+}
+
+.mapa:hover {
+    background-color: #83838300;
+    border-style: solid;
+    color: #868a68;
+    font-weight: bold;
+}
