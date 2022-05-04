@@ -110,3 +110,40 @@ a:hover {
     color: #868a68;
     font-weight: bold;
 }
+
+.excondido {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    #la {
+        align-items: center !important;
+    }
+
+    #sombra {
+        box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+        background-color: rgba(37, 35, 35, 0.267);
+    }
+
+    .excondido {
+        display: block;
+
+    }
+
+    #fila {
+        display: none;
+    }
+
+    #logsito {
+        width: 100%;
+    }
+
+    #calendariodeamor {
+        width: 90%;
+    }
+
+    #divtamano70 {
+        width: 100% !important;
+    }
+
+}
